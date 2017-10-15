@@ -3,6 +3,10 @@
 This library contains a lot of useful code developed over my career working as a penetration tester.  The vast majority of the code within this library is designed to extend my own capabilities, as well as provide a base of code from which I can develop useful tools or applications.  This library is fairly large, and was developed privately over a long period of time.  This library contains it's own event system, x86-32 disassembler, file format parsers, memory profiler, network bindings, database bindings, and a variety of other useful code.  I had initially designed it with the idea that I would one day sell the code, but since it has become too large for me to manage on my own, I've decided to simply open source it under the MIT license so someone can potentially find use from it.  I will be updating the library periodically. The library is named after the Pacific Beach, San Diego block party, where I first had the idea for the library in 2006.
 
 
+# Building this library:
+
+Currently, this library is built through an eclipse CDT project which generates its own Makefile.  I am currently converting the library to build using autotools, but I'm not particularly great with it, so it may take a bit for me to provide a set of build scripts for the library.
+
 # Using this library:
 
 You can use this library however you want, but that being stated, this library is a work in progress, and it's been written ENTIRELY by one person.  There may be bugs, where-in-fact, there are bugs.  For example, the websocket implementation is working, but when taking multiple connections, hangs occur.  I'm still working on ironing out bugs, so unless you find a usage case that I've provided that says the code is bug free and ready for production, do not use it for production code.  Also, most of this code is developed in a non-stream oriented way, relying on pre-allocation in order to generate outputs.  What this means is that if you have files that are larger than available ram, it's likely that parsing will fail due to not being able to pre-allocate memory.  This is by design, having come from a C/ASM background.  
