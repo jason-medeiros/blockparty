@@ -1,6 +1,8 @@
 # libblockparty: blockparty multipurpose library.  
 
-This library contains a lot of useful code developed over my career working as a penetration tester.  The vast majority of the code within this library is designed to extend my own capabilities, as well as provide a base of code from which I can develop useful tools or applications.  This library is fairly large, and was developed privately over a long period of time.  This library contains it's own event system, x86-32 disassembler, file format parsers, memory profiler, network bindings, database bindings, and a variety of other useful code.  I had initially designed it with the idea that I would one day sell the code, but since it has become too large for me to manage on my own, I've decided to simply open source it under the MIT license so someone can potentially find use from it.  I will be updating the library periodically. The library is named after the Pacific Beach, San Diego block party, where I first had the idea for the library in 2006.
+This library contains a lot of useful code developed over my career working as a penetration tester.  The vast majority of the code within this library is designed to extend my own capabilities, as well as provide a base of code from which I can develop useful tools or applications.  
+
+This library is fairly large, and was developed privately over a long period of time.  This library contains it's own event system, x86-32 disassembler, file format parsers, memory profiler, network bindings, database bindings, and a variety of other useful code.  I had initially designed it with the idea that I would one day sell the code, but since it has become too large for me to manage on my own, I've decided to simply open source it under the MIT license so someone can potentially find use from it.  I will be updating the library periodically. The library is named after the Pacific Beach, San Diego block party, where I first had the idea for the library in 2006.
 
 
 # Building this library:
@@ -20,7 +22,7 @@ Note: You must install dependencies BEFORE building the project.
 
 important: Read it before running it, as it doesn't do any error checking when doing dependency installing and you will probably have a better time if you know what the script is supposed to do.  
 
-###### The full current dependencies can be installed via apt with:
+###### Dependencies which can be installed via standard Ubuntu repositories are:
 
 `apt-get install -y gcc g++ make cmake`
 
@@ -29,7 +31,7 @@ important: Read it before running it, as it doesn't do any error checking when d
 `apt-get install -y libxml2-dev libssl-dev libcurl4-openssl-dev libvmime-dev libpcap-dev libmailutils-dev libglib2.0-dev libjson-glib-dev libstatgrab-dev libmicrohttpd-dev libmariadb-client-lgpl-dev libmariadb-client-lgpl-dev-compat libmicrohttpd-dev libpcre3-dev libsqlite3-dev`
 
 
-###### You also need libcsv_parser which is provided as a source package since an apt package isn't available.  The blockparty_install_deps_ubuntu16.04.sh contains instructions on how to build it.
+###### You also need libcsv_parser which is provided as a source package since an apt package isn't available.  The blockparty_install_deps_ubuntu16.04.sh contains instructions on how to build it.  This depenency may be removed in the future since I have my own CSV parser written.
 
 ###### The project also requires libmozjs-31-dev, which you either need to install from source, or via PPA by adding the following repo using the following commands:
 
