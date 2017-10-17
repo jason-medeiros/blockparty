@@ -14,10 +14,22 @@ Note: You must install dependencies BEFORE building the project.
 
 # Installing Dependencies:
 
-Todo/coming soon.
+To install library dependencies, please open and read the script:
+
+./dependencies/blockparty_install_deps_ubuntu16.04.sh
+
+
+# Examples:
+
+Coming soon.
 
 # Using this library:
 
 You can use this library however you want, but that being stated, this library is a work in progress, and it's been written ENTIRELY by one person.  There may be bugs, where-in-fact, there are bugs.  For example, the websocket implementation is working, but when taking multiple connections, hangs occur.  I'm still working on ironing out bugs, so unless you find a usage case that I've provided that says the code is bug free and ready for production, do not use it for production code.  Also, most of this code is developed in a non-stream oriented way, relying on pre-allocation in order to generate outputs.  What this means is that if you have files that are larger than available ram, it's likely that parsing will fail due to not being able to pre-allocate memory.  This is by design, having come from a C/ASM background.  
 
 The event system was developed using the reactor/observer pattern, without knowing that the reactor/observer pattern exists.  When I first started developing the library, I needed an event system, but didn't completely understand most design patterns.  I designed the blockparty event system by spending a lot of time in front of a video camera and whiteboard, spitballing what I estimated to be the correct implementation based on needs.  Without even knowing what it was, I chose the reactor/observer pattern.  I recommend if you're starting a new project that needs an event system, utilize node.js, as it has a very strong implementation of reactor/observer, and it's what I'm currently developing my proprietary projects on.  That's not to say that the event system in blockparty isn't useful, it's just other solutions are available and better tested.  Again, the event system works, and is very fast, I simply haven't tested it for thousands of hours, only a few hundred.
+
+
+# Liability Notice:
+
+This code is not guaranteed to work, it could potentially even cause the earth and sun to explode, there is no unit test that proves otherwise.  I did my best with what time I had, and I tried to avoid pitfalls where I could, but do not expect this code to be usable on extremely mission critical places, as I am only one man, and I don't have the resources to survive your lawsuit.
