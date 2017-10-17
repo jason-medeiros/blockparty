@@ -5,7 +5,16 @@ This library contains a lot of useful code developed over my career working as a
 
 # Building this library:
 
-Currently, this library is built through an eclipse CDT project which generates its own Makefile.  I am currently converting the library to build using autotools, but I'm not particularly great with it, so it may take a bit for me to provide a set of build scripts for the library.
+The library utilizes autotools.  A frontend script for building/installing the library can be found in ./library/BuildAndInstallBlockparty.sh
+
+You should be able to simply run the script on most platforms to install it.  
+
+Note: You must install dependencies BEFORE building the project.  
+
+
+# Installing Dependencies:
+
+Todo/coming soon.
 
 # Using this library:
 
