@@ -23,7 +23,9 @@ important: Read it before running it, as it doesn't do any error checking when d
 ###### The full current dependencies can be installed via apt with:
 
 `apt-get install -y gcc g++ make cmake`
+
 `apt-get install -y libevent-dev`
+
 `apt-get install -y libxml2-dev libssl-dev libcurl4-openssl-dev libvmime-dev libpcap-dev libmailutils-dev libglib2.0-dev libjson-glib-dev libstatgrab-dev libmicrohttpd-dev libmariadb-client-lgpl-dev libmariadb-client-lgpl-dev-compat libmicrohttpd-dev libpcre3-dev libsqlite3-dev`
 
 
@@ -32,7 +34,9 @@ important: Read it before running it, as it doesn't do any error checking when d
 ###### The project also requires libmozjs-31-dev, which you either need to install from source, or via PPA by adding the following repo using the following commands:
 
 `add-apt-repository ppa:ricotz/testing`
+
 `apt-get update`
+
 `apt-get install libmozjs31-dev`
 
 
