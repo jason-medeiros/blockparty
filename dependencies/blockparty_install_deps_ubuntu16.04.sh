@@ -9,19 +9,6 @@
 #
 # This script is confirmed working for ubuntu 16.04 as of 10/15/2017.  It may break in the future if unknown changes occur.
 #
-# Current Dependencies:
-# - libevent (not our code, but some deps depend on this)
-# - libxml2
-# - libssl
-# - libcurl
-# - libvmime (tenative for removal)
-# - libpcap
-# - libmailutils
-# - libglib
-# - libjson
-# - libstatgrab
-# - libmariadbclient
-# - libmicrohttpd
 
 
 echo " >> installing blockparty dependencies from apt directly, where available."
@@ -32,8 +19,23 @@ apt-get install -y gcc g++ make cmake
 # install libevent
 apt-get install libevent-dev
 
-# install supplemental package
-apt-get install -y libxml2-dev libssl-dev libcurl4-openssl-dev libvmime-dev libpcap-dev libmailutils-dev libglib2.0-dev libjson-glib-dev libstatgrab-dev libmariadbclient-dev libmicrohttpd-dev libmariadb-client-lgpl-dev libmariadb-client-lgpl-dev-compat libmicrohttpd-dev libpcre2-dev
+# install required packages
+apt-get install -y\
+ libxml2-dev\
+ libssl-dev\
+ libcurl4-openssl-dev\
+ libvmime-dev\
+ libpcap-dev\
+ libmailutils-dev\
+ libglib2.0-dev\
+ libjson-glib-dev\
+ libstatgrab-dev\
+ libmariadbclient-dev\
+ libmicrohttpd-dev\
+ libmariadb-client-lgpl-dev\
+ libmariadb-client-lgpl-dev-compat\
+ libmicrohttpd-dev\
+ libpcre3-dev
 
 
 
