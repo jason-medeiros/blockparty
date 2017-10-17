@@ -7,7 +7,7 @@
 
 
 // blockparty main include
-#include "../../include/BP-Main.h"
+#include "../../../../include/BP-Main.h"
 
 // functions that are only available to local DOM managers
 JSFunctionSpec BP_JS_GLOBAL_DOM_PRIV_FUNCTION_TABLE[] =

@@ -6,7 +6,7 @@
  */
 
 // include
-#include "../../include/BP-Main.h"
+#include "../../../../include/BP-Main.h"
 
 // functions that are available to users
 JSFunctionSpec BP_JS_GLOBAL_USER_PRIV_FUNCTION_TABLE[] =

@@ -7,7 +7,7 @@
 
 
 // blockparty main include
-#include "../../include/BP-Main.h"
+#include "../../../../include/BP-Main.h"
 
 
 // functions that are only available to local admin managers

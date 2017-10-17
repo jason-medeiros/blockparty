@@ -7,7 +7,7 @@
 
 
 // blockparty main include
-#include "../../include/BP-Main.h"
+#include "../../../../include/BP-Main.h"
 
 
 
