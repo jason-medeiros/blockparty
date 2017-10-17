@@ -66,3 +66,9 @@ I recommend if you're starting a new project that needs a reactor/observer event
 # Liability Notice:
 
 This code is not guaranteed to work, it could potentially even cause the earth and sun to explode, there is no unit test that proves otherwise.  I did my best with what time I had, and I tried to avoid pitfalls where I could, but do not expect this code to be usable on extremely mission critical places, as I am only one man, and I don't have the resources to survive your lawsuit.
+
+
+# Contact:
+
+Please contact through github if you need to discuss any project issues.  You will not find me on social-media, as I do not, and never will, participate in social media platforms of any sort. 
+
