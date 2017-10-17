@@ -16,22 +16,28 @@ Note: You must install dependencies BEFORE building the project.
 
 To install library dependencies, please open and read the script:
 
-./dependencies/blockparty_install_deps_ubuntu16.04.sh
+`./dependencies/blockparty_install_deps_ubuntu16.04.sh`
 
 important: Read it before running it, as it doesn't do any error checking when doing dependency installing and you will probably have a better time if you know what the script is supposed to do.  
 
 The full current dependencies can be installed via apt with:
-apt-get install -y gcc g++ make cmake
-apt-get install -y libevent-dev
-apt-get install -y libxml2-dev libssl-dev libcurl4-openssl-dev libvmime-dev libpcap-dev libmailutils-dev libglib2.0-dev libjson-glib-dev libstatgrab-dev libmicrohttpd-dev libmariadb-client-lgpl-dev libmariadb-client-lgpl-dev-compat libmicrohttpd-dev libpcre3-dev libsqlite3-dev
+
+`apt-get install -y gcc g++ make cmake`
+
+`apt-get install -y libevent-dev`
+
+`apt-get install -y libxml2-dev libssl-dev libcurl4-openssl-dev libvmime-dev libpcap-dev libmailutils-dev libglib2.0-dev libjson-glib-dev libstatgrab-dev libmicrohttpd-dev libmariadb-client-lgpl-dev libmariadb-client-lgpl-dev-compat libmicrohttpd-dev libpcre3-dev libsqlite3-dev`
+
 
 You also need libcsv_parser which is provided as a source package since an apt package isn't available.  The blockparty_install_deps_ubuntu16.04.sh contains instructions on how to build it.
 
 The project also requires libmozjs-31-dev, which you either need to install from source, or via PPA by adding the following repo using the following commands:
 
-add-apt-repository ppa:ricotz/testing
-apt-get update
-apt-get install libmozjs31-dev
+`add-apt-repository ppa:ricotz/testing`
+
+`apt-get update`
+
+`apt-get install libmozjs31-dev`
 
 
 
