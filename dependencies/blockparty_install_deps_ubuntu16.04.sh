@@ -17,26 +17,10 @@ echo " >> installing blockparty dependencies from apt directly, where available.
 apt-get install -y gcc g++ make cmake
 
 # install libevent
-apt-get install libevent-dev
+apt-get install -y libevent-dev
 
 # install required packages
-apt-get install -y\
- libxml2-dev\
- libssl-dev\
- libcurl4-openssl-dev\
- libvmime-dev\
- libpcap-dev\
- libmailutils-dev\
- libglib2.0-dev\
- libjson-glib-dev\
- libstatgrab-dev\
- libmariadbclient-dev\
- libmicrohttpd-dev\
- libmariadb-client-lgpl-dev\
- libmariadb-client-lgpl-dev-compat\
- libmicrohttpd-dev\
- libpcre3-dev
-
+apt-get install -y libxml2-dev libssl-dev libcurl4-openssl-dev libvmime-dev libpcap-dev libmailutils-dev libglib2.0-dev libjson-glib-dev libstatgrab-dev libmariadbclient-dev libmicrohttpd-dev libmariadb-client-lgpl-dev libmariadb-client-lgpl-dev-compat libmicrohttpd-dev libpcre3-dev
 
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
