@@ -1,0 +1,1 @@
+These packages may be outdated.  Please use the most current version of available dependency packages available.  The only reason these are here, is because the native ubuntu packages simply did not have the necessary features required for the library (aka websockets in microhttpd, advanced JS from mozjs)
