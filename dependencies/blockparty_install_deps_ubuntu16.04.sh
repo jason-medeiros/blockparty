@@ -20,7 +20,7 @@ apt-get install -y gcc g++ make cmake
 apt-get install -y libevent-dev
 
 # install required packages
-apt-get install -y libxml2-dev libssl-dev libcurl4-openssl-dev libvmime-dev libpcap-dev libmailutils-dev libglib2.0-dev libjson-glib-dev libstatgrab-dev libmariadbclient-dev libmicrohttpd-dev libmariadb-client-lgpl-dev libmariadb-client-lgpl-dev-compat libmicrohttpd-dev libpcre3-dev
+apt-get install -y libxml2-dev libssl-dev libcurl4-openssl-dev libvmime-dev libpcap-dev libmailutils-dev libglib2.0-dev libjson-glib-dev libstatgrab-dev libmicrohttpd-dev libmariadb-client-lgpl-dev libmariadb-client-lgpl-dev-compat libmicrohttpd-dev libpcre3-dev libsqlite3-dev
 
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -55,7 +55,8 @@ popd
 
 echo "[+] Now you must also install mozjs31.  This is not included by default in ubuntu"
 echo "    so you'll need to either build it from source (not recommended) or use the "
-echo "    following ppa:"
+echo "    following ppa: (simply run the commands below)"
+echo "  >> run these commands to install libmozjs31-dev package from repo"
 echo "  add-apt-repository ppa:ricotz/testing"
 echo "  apt-get update "
 echo "  apt-get install libmozjs31-dev"
